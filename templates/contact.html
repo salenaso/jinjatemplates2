@@ -1,0 +1,14 @@
+{%extends "templates/base.html" %}
+{% block content %}
+<title>Contact</title>
+
+	
+	<p>{{hint}}</p>
+	<form action="/index.html" method="post">
+		<label>name: <input type="text" name="name"></label>
+		<label>email address: <input type="password" name="pw"></label>
+		<label>message: <input type="text" name="message"></label>
+		<input type="submit" value="submit">
+	</form>
+	
+	{% endblock %}
